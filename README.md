@@ -1287,7 +1287,7 @@ This Auto-unseal mechanism is Open Source in Vault 1.0 but would require Enterpr
 - Default value: vault_key
 
 ## Vault Transit Auto-unseal
-This enabled Vault to use another Vault instance for the unseal process using its transit secret engine
+This enables Vault to use another Vault instance for the unseal process using its transit secret engine
 
 ### `vault_transit`
 
