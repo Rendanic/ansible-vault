@@ -46,5 +46,4 @@
     msg: "need vault_transit_address and vault_transit_token defined for vault transit seal configuration."
   when:
     - vault_transit | bool
-    - not vault_transit_address
-    - not vault_transit_token
+    - not (vault_transit_address or vault_transit_token)
