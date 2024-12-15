@@ -1,3 +1,55 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [2.6.0](https://github.com/Rendanic/ansible-vault/compare/v2.5.8...v2.6.0) (2024-12-15)
+
+### Features
+
+* add support for AlmaLinux ([04caf06](https://github.com/Rendanic/ansible-vault/commit/04caf067e231a5efbd55667df6f730fc221b1911))
+* add support for AmazonLinux ([15a6774](https://github.com/Rendanic/ansible-vault/commit/15a677441f568d5d2d148dc7cc20f83b6c0192f6))
+* add support for debian 12 ([7720ead](https://github.com/Rendanic/ansible-vault/commit/7720eadc3b38402d1e86f4da22e7d6eb2c634caf))
+* add support for EL9 distros ([b7e27aa](https://github.com/Rendanic/ansible-vault/commit/b7e27aac402c950abf4c580e1e42b56cf699798f))
+* add support for installing vault plugins ([37caf93](https://github.com/Rendanic/ansible-vault/commit/37caf93cf06e7e503191baaf5ea93681addcbde8))
+* add support for the current versions of debian/ubuntu ([438493a](https://github.com/Rendanic/ansible-vault/commit/438493aac7b5ae4e911d1d9fe13a40897bff4c42))
+* **ci:** auto discover molecule scenarios ([ee2d820](https://github.com/Rendanic/ansible-vault/commit/ee2d8202bc79cfb5d7c1d480056bca6a42bf5b6f))
+* **GHA:** add commitlint and semrel ([#362](https://github.com/Rendanic/ansible-vault/issues/362)) ([d5bae97](https://github.com/Rendanic/ansible-vault/commit/d5bae97c79a783b2b7044d3b166dd2f0495666e9))
+* **plugins:** support using token from vault cli token helper ([4c61eb3](https://github.com/Rendanic/ansible-vault/commit/4c61eb320cd428476028778523bf3eec08e2e1c2))
+* **seal:** add support for ocikms ([eea06b9](https://github.com/Rendanic/ansible-vault/commit/eea06b9626f2764204bc3b3b265c04b0e7a6da40))
+* **testing:** add molecule scenarios for all of the platforms that the role supports ([38b2d40](https://github.com/Rendanic/ansible-vault/commit/38b2d40afc167276b2e6375be28de7de607c81b6))
+
+### Bug Fixes
+
+* amazonlinux 2022 repo ([ca78fd0](https://github.com/Rendanic/ansible-vault/commit/ca78fd06d5a9a546470ff9a678f534a290f97dd3))
+* amazonlinux repo ([4dc2170](https://github.com/Rendanic/ansible-vault/commit/4dc2170526f79f585bd8755c7b59d539950a8fa8))
+* applying PR[#302](https://github.com/Rendanic/ansible-vault/issues/302) comments ([d7389f5](https://github.com/Rendanic/ansible-vault/commit/d7389f575d778ed59597a21735db9774290393cb))
+* **ci:** failing legacy platforms and delegation issues. ([#321](https://github.com/Rendanic/ansible-vault/issues/321)) ([6a18b80](https://github.com/Rendanic/ansible-vault/commit/6a18b8043cc7b64d3f9a9c095f3e473e615c9354))
+* **ci:** ignore examples dir in ansible lint ([#327](https://github.com/Rendanic/ansible-vault/issues/327)) ([0f9d34c](https://github.com/Rendanic/ansible-vault/commit/0f9d34ce4eaf7ed82c78b103f7f0aca4621b9d40))
+* correct vault group in goss tests ([446859b](https://github.com/Rendanic/ansible-vault/commit/446859ba8d4e42e0e86e2b07b178654696a87deb))
+* distro versions in readme ([c7bfd0e](https://github.com/Rendanic/ansible-vault/commit/c7bfd0ecf2721842e9f5c34272bab5582f49cee1))
+* jinja2 linting ([0cac363](https://github.com/Rendanic/ansible-vault/commit/0cac3639dfe84a3db0aa8a7c02b152847c0c1dba))
+* **lint:** Templated files should use template instead of copy ([aa43735](https://github.com/Rendanic/ansible-vault/commit/aa437354db200459e5adbf92ddf6f1ce4963f17c))
+* only set client_ca_file for tcp listener when defined ([a7a314c](https://github.com/Rendanic/ansible-vault/commit/a7a314c992f72e04d3847a6a11326ca6dfd36a76))
+* **pkcs11:** jinja whitespace ([b872b09](https://github.com/Rendanic/ansible-vault/commit/b872b09ebc754bc13515e5832225540b0cf47df6))
+* remove debian 12 since it's a prerelease ([c3cd9e7](https://github.com/Rendanic/ansible-vault/commit/c3cd9e72da283a30dcf8a2c885c83a8e177d0459))
+* remove vault_tls_prefer_server_cipher_suites ([fa5a7e6](https://github.com/Rendanic/ansible-vault/commit/fa5a7e613bc2f11b59e65b97ce55c4db429f0b2a))
+* remove vault_tls_prefer_server_cipher_suites defaults ([c7dcf03](https://github.com/Rendanic/ansible-vault/commit/c7dcf0312318e68fdf6ef44ecf7717551b777509))
+* replace deprecated include with include_tasks ([6e3e032](https://github.com/Rendanic/ansible-vault/commit/6e3e032a1271744712249530cbf10391e3828d47))
+* risky-file-permissions ([3729dbf](https://github.com/Rendanic/ansible-vault/commit/3729dbfcd584f9fb9fcbfea935da33efa1f059e0))
+* **semrel:** fix branch ([#363](https://github.com/Rendanic/ansible-vault/issues/363)) ([ec91b6c](https://github.com/Rendanic/ansible-vault/commit/ec91b6ca1bc61444be0cf8b916ba4ebce6608962))
+* **semrel:** fix branch ([#364](https://github.com/Rendanic/ansible-vault/issues/364)) ([2c87dd4](https://github.com/Rendanic/ansible-vault/commit/2c87dd4a372defffa77670dab6ce00cbd3ae219d))
+* set vault_os_packages for RedHat ([293f7ad](https://github.com/Rendanic/ansible-vault/commit/293f7ade4bff79b9d9eeda56c7edd0837ed49d17))
+* shameless self plug ([f2be6f9](https://github.com/Rendanic/ansible-vault/commit/f2be6f990719820b92bca3f0571cd702bbb35382))
+* **smerel:** bump changelog to 8.0.0 ([#365](https://github.com/Rendanic/ansible-vault/issues/365)) ([7e2fded](https://github.com/Rendanic/ansible-vault/commit/7e2fdeddec3405756aae10f1dedcace4ba94779b))
+* systemd unit option `ConditionFileExists` ([12d294d](https://github.com/Rendanic/ansible-vault/commit/12d294defd908b62c0d46f058db6768fe74fde99))
+* tasks that check if vault is installed shouldn't be handlers ([60c7478](https://github.com/Rendanic/ansible-vault/commit/60c747887704d0a8e4a4983462623f09e162fc72))
+* template can't write content to file ([8940571](https://github.com/Rendanic/ansible-vault/commit/894057188efa1510e42d7d5d9b68e785872278d6))
+* temporarily disable overly strict lint rule ([5695e34](https://github.com/Rendanic/ansible-vault/commit/5695e34f96312341b791de4b32834ac189897ad0))
+
+### Reverts
+
+* Revert "Replace server variable with inventory_hostname in raft configuration" ([b798fdd](https://github.com/Rendanic/ansible-vault/commit/b798fddff83d953f81b40b4669f5a545af3eb722))
+
 ## NEXT
 
 - Add support for proxy configuration
